@@ -1,0 +1,29 @@
+LSITA DE EVENTOS
+<select name="listadistrintos" (change)="distritoSeleccionado($event)">
+    <option value="ARGANZUELA">ARGANZUELA</option>
+    <option value="BARAJAS">BARAJAS</option>
+    <option value="CARABANCHEL">CARABANCHEL</option>
+    <option value="CENTRO">CENTRO</option>
+    <option value="CHAMARTIN">CHAMARTIN</option>
+    <option value="CHAMBERI">CHAMBERI</option>
+    <option value="CIUDAD LINEAL">CIUDAD LINEAL</option>
+    <option value="FUENCARRAL-EL PARDO">FUENCARRAL-EL PARDO</option>
+    <option value="HORTALEZA">HORTALEZA</option>
+    <option value="LATINA">LATINA</option>
+    <option value="MONCLOA-ARAVACA">MONCLOA-ARAVACA</option>
+    <option value="MORATALAZ">MORATALAZ</option>
+    <option value="PUENTE DE VALLECAS">PUENTE DE VALLECAS</option>
+    <option value="RETIRO">RETIRO</option>
+    <option value="SALAMANCA">SALAMANCA</option>
+    <option value="SAN BLAS-CANILLEJAS">SAN BLAS-CANILLEJAS</option>
+    <option value="USERA">USERA</option>
+    <option value="VICALVARO">VICALVARO</option>
+    <option value="VILLA DE VALLECAS">VILLA DE VALLECAS</option>
+    <option value="VILLAVERDE">VILLAVERDE</option>
+</select>
+<div *ngFor="let evento of lista_eventos">
+    <ul>
+        <li>{{evento}}</li>
+    </ul>
+</div>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+   
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script type="module">
+        import { loadingController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.loadingController = loadingController;
+    </script>
+    <title>PÁGINA DE BÚSQUEDA DE EVENTOS</title>
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>BÚSQUEDA DE EVENTOS</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+            <!-- <h1>Main Content</h1> -->
+            <ion-item>
+                <ion-label>Elija distrito</ion-label>
+                <ion-select id="selectdistritos" ok-text="OK" cancel-text="CANCELAR">
+                    <ion-select-option value="ARGANZUELA">ARGANZUELA</ion-select-option>
+                    <ion-select-option value="BARAJAS">BARAJAS</ion-select-option>
+                    <ion-select-option value="CARABANCHEL">CARABANCHEL</ion-select-option>
+                    <ion-select-option value="CENTRO">CENTRO</ion-select-option>
+                    <ion-select-option value="CHAMARTIN">CHAMARTIN</ion-select-option>
+                    <ion-select-option value="CHAMBERI">CHAMBERI</ion-select-option>
+                    <ion-select-option value="CIUDAD LINEAL">CIUDAD LINEAL</ion-select-option>
+                    <ion-select-option value="FUENCARRAL-EL PARDO">FUENCARRAL-EL PARDO</ion-select-option>
+                    <ion-select-option value="HORTALEZA">HORTALEZA</ion-select-option>
+                    <ion-select-option value="LATINA">LATINA</ion-select-option>
+                    <ion-select-option value="MONCLOA-ARAVACA">MONCLOA-ARAVACA</ion-select-option>
+                    <ion-select-option value="MORATALAZ">MORATALAZ</ion-select-option>
+                    <ion-select-option value="PUENTE DE VALLECAS">PUENTE DE VALLECAS</ion-select-option>
+                    <ion-select-option value="RETIRO">RETIRO</ion-select-option>
+                    <ion-select-option value="SALAMANCA">SALAMANCA</ion-select-option>
+                    <ion-select-option value="SAN BLAS-CANILLEJAS">SAN BLAS-CANILLEJAS</ion-select-option>
+                    <ion-select-option value="USERA">USERA</ion-select-option>
+                    <ion-select-option value="VICALVARO">VICALVARO</ion-select-option>
+                    <ion-select-option value="VILLA DE VALLECAS">VILLA DE VALLECAS</ion-select-option>
+                    <ion-select-option value="VILLAVERDE">VILLAVERDE</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-list id="lista_eventos">
+
+            </ion-list>
+
+        </ion-content>
+    </ion-app>
+    
+    <script src="ejemplo.js"></script>
+</body>
+
+</html>
